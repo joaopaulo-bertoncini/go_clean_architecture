@@ -1,0 +1,22 @@
+{
+   "configurations": {
+      "run": {
+         "adapter": "vscode-go",
+         "configuration": {
+            "args": [
+               "--http_port=$HTTP_PORT"
+            ],
+            "cwd": "${workspaceRoot}",
+            "dlvToolPath": "$HOME/go/bin/dlv",
+            "env": {
+               "log_level": "debug",
+               "HTTP_TIMEOUT": "3s"
+            },
+            "mode": "debug",
+            "name": "Launch core",
+            "program": "${workspaceRoot}/cmd/services/core",
+            "request": "launch"
+         }
+      }
+   }
+}

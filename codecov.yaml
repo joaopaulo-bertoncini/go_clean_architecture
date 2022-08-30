@@ -1,0 +1,22 @@
+codecov:
+  require_ci_to_pass: false
+  disable_default_path_fixes: yes
+  bot: "codecov-bot"
+github_checks:
+  annotations: false
+coverage:
+  status:
+    patch: off
+comment:
+  layout: "reach, diff, flags, files"
+  behavior: default
+  require_changes: false  # if true: only post the comment if coverage changes
+  require_base: no        # [yes :: must have a base report to post]
+  require_head: yes       # [yes :: must have a head report to post]
+  branches:               # branch names that can post comment
+    - "main"
+fixes:
+  - "github.com/lovung/GoCleanArchitecture/::"
+ignore:
+  - "cmd"
+  - "tmp"
